@@ -1,0 +1,10 @@
+base
+knitr
+rmarkdown
+lattice
+RColorBrewer
+latticeExtra
+plyr
+ggplot2
+ggmap
+leaflet
