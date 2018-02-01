@@ -1,8 +1,18 @@
 ---
-title: >
-  Distribuição dos atendimentos de tratamento contínuo
-author: >
-  Stats4Health
+title: "Distribuição dos atendimentos de tratamento contínuo"
+subtitle: "Stats4Health"
+author: |
+  * Walmes M. Zeviani (`walmes@ufpr.br`)
+  * Wagner H. Bonat (`wbonat@ufpr.br`)
+  * Guilherme Hathy (`guilherme.hathy@miti.com.br`)
+  * Maria Helena Oliveira (`mariaholiveira34@gmail.com`)
+# author: |
+#   |                       |                               |
+#   |:----------------------|:------------------------------|
+#   | Walmes M. Zeviani     | `walmes@ufpr.br`              |
+#   | Wagner H. Bonat       | `wbonat@ufpr.br`              |
+#   | Guilherme Hathy       | `guilherme.hathy@miti.com.br` |
+#   | Maria Helena Oliveira | `mariaholiveira34@gmail.com`  |
 date: |
   `r gsub("^(0?)(\\d)-(\\w)(\\w+)-(\\d{4})",
           "\\2 de \\U\\3\\L\\4 de \\5",
