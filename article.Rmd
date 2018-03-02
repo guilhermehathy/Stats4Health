@@ -190,7 +190,7 @@ table(duplicated(cep))
 # Com servidor do LEG a conexão com Google é mais rápida.
 cep <- dput(unique(cep))
 length(cep)
-latlon <- dd(location = cep[2500:4296])
+latlon1 <- geocode(location = cep[2500:4296])
 
 str(latlon)
 latlon
