@@ -154,10 +154,10 @@ barchart(sort(table(nef$AP_UFMUN),
                         under = TRUE)
 
 # Códigos para filtrar os registros de Curitiba.
-mun <- c(Curitiba = "410690")
+#mun <- c(Curitiba = "410690")
 
 # Aplicando o filtro.
-nef <- subset(nef, AP_UFMUN %in% mun)
+#nef <- subset(nef, AP_UFMUN %in% mun)
 
 # Dimensões depois de filtrar.
 dim(nef)
@@ -179,19 +179,21 @@ table(nchar(nef$AP_CEPPCN))
 cep <- gsub(x = nef$AP_CEPPCN,
             pattern = "(\\d{2})(\\d{3})(\\d{3})",
             replacement = "\\1.\\2-\\3")
-cep <- sprintf("CEP %s, Curitiba-PR", cep)
+cep <- sprintf("CEP %s", cep)
 # head(cep)
 
 # Quantidade de CEPs únicos e duplicados.
 table(duplicated(cep))
 
+
 # Para recortar e colar no RStudio Web do LEG: rstudio.leg.ufpr.br.
 # Com servidor do LEG a conexão com Google é mais rápida.
-# dput(unique(cep))
+cep <- dput(unique(cep))
+length(cep)
+latlon <- dd(location = cep[2500:4296])
 
-# latlon <- geocode(location = cep)
-# str(latlon)
-
+str(latlon)
+latlon
 # Valores de lat & lon retornados para API para cada CEP enviado.
 latlon <-
 structure(list(lon = c(-49.3069611, -49.291748, -49.291748, -49.2360011,
