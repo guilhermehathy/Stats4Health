@@ -8,7 +8,7 @@ trabalhos, visite: <https://hackdash.org/dashboards/bluehackpr>.
 
   * Walmes Marques Zeviani - `walmes@ufpr.br`
   * Wagner Bonat - `wbonat@ufpr.br`
-  * Guilherme Hathy - `guilherme.hathy@miti.com.br`
+  * Guilherme Hathy - `hathy@ladecora.com.br`
   * Maria Helena Oliveira - `mariaholiveira34@gmail.com`
 
 ## DESCRIÇÃO DO PROJETO
